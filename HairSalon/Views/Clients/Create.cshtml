@@ -11,6 +11,12 @@
   @Html.LabelFor(model => model.Name)
   @Html.TextBoxFor(model => model.Name)
 
+  @Html.LabelFor(model => model.DateAdded)
+  @Html.TextBoxFor(model => model.DateAdded)
+
+  @Html.LabelFor(model => model.Details)
+  @Html.TextAreaFor(model => model.Details)
+
   @Html.LabelFor(model => model.Stylist)
   @Html.DropDownList("StylistId")
 

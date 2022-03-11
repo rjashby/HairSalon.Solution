@@ -12,6 +12,7 @@ body {
   padding: 20px;
   border: 20px;
   margin: 20px;
+  color: black;
   font-size: larger;
   background-image: url("https://images.squarespace-cdn.com/content/v1/5edee990a8696a7b8618fe6d/1592969100838-LFYK2NLO6IOIP3XJ2IUA/salon.jpg");
 }
@@ -19,9 +20,19 @@ body {
 h1 {
   margin-left: 10em;
   width: auto;
+  text-decoration: underline;
 }
 
 a {
   color: black;
   margin-left: 2em;
+  font-weight: bolder;
+}
+
+p {
+  color: black
+}
+
+input {
+  margin: 10px;
 }

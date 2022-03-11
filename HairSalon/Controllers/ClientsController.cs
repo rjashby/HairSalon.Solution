@@ -30,9 +30,9 @@ namespace HairSalon.Controllers
     }
 
     [HttpPost]
-    public ActionResult Create(Restaurant restaurant)
+    public ActionResult Create(Client client)
     {
-      _db.Restaurants.Add(restaurant);
+      _db.Clients.Add(client);
       _db.SaveChanges();
       return RedirectToAction("Index");
     }

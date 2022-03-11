@@ -1,12 +1,22 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Aunt Claire's Pancake and Hair Salon Castle</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  </head>
-  <body>
-    
-    <p><a href='/'>Back home</a></p>
-  </body>
-</html>
+@{
+  Layout = "_Layout";
+}
+
+@using HairSalong.Models;
+
+<h1>Stylists</h1>
+
+@if (@Model.Count == 0)
+{
+  <h3>No stylists have been added yet!</h3>
+} 
+
+<ul>
+  @foreach(Stylist stylist in Model)
+  {
+    <li>@Html.ActionLink($"{stylist.Name}", "Details", new { id = stylist.StylistId })</li>
+  }
+</ul>
+
+<p>@Html.ActionLink("Add new stylist to the roster", "Create")</p>
+<p>@Html.ActionLink("Home", "Index", "Home")</p>

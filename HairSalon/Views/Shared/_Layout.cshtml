@@ -4,15 +4,11 @@
     <meta charset="utf-8">
     <title>Aunt Claire's Pancake and Hair Salon Castle</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/styles.css">
+    @* <title>@ViewBag.PageTitle</title> *@
   </head>
   <body>
-  <h1>Register a new client</h1>
-
-  <form action="/" method="post">
-    <input id="XXXX" name="XXXX" type="hidden" value="@Model.Id">
-    <label for="XXXX">Client Name</label>
-    <input id="XXXX" name="XXXX" type="text">
-    <button type='submit'>Add Client</button>
-  </form>
+    @RenderBody()
+    @await Html.PartialAsync("Footer")
   </body>
 </html>

@@ -14,3 +14,7 @@ body {
   margin: 20px;
   background-color: lightcoral;
 }
+
+ul li {
+  list-style-type: ✂️;
+}

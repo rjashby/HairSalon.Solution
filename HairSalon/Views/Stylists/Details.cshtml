@@ -16,7 +16,9 @@
 
 @foreach (Client client in Model.Clients)
 {
-  <h4>@client.Name</h4>
+  <ul>
+    <li>@client.Name</li>
+  </ul>
 }
 
 <p>@Html.ActionLink("Add new Stylist", "Create", "Stylists")</p>  

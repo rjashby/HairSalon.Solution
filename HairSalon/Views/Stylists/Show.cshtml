@@ -2,16 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Pietro's Vendor and Order Tracker</title>
+    <title>Aunt Claire's Pancake and Hair Salon Castle</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   </head>
   <body>
     @using VendorOrder.Models;
 
-    <h3>Here are all the orders for this vendor:</h3>
+    <h3>Clients assigned to this stylist:</h3>
 
     <ol>
-    @foreach (Order order in @Model["orders"])
+    @foreach (Client client in @Model["clients"])
     {
       <li></li>
     }

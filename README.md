@@ -38,7 +38,7 @@ _A user can also, edit or delete clients and stylists as necessary, updating the
 
 2) _Additionally, you will need to download the .NET framework, which can be downloaded at [.NET5](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)_.
 
-3) _To effectively work with the database, it would be beneficial to MySQL Workbench at [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)_
+3) _To effectively work with the database, download MySQL Workbench at [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)_
 
 **Cloning**
 

@@ -60,7 +60,7 @@ _A user can also, edit or delete clients and stylists as necessary, updating the
 
 **Using The Database** 
 
-1) _In order to access the database you will need to create an appsettings.json file in the main/root directory. This file should be populated with the following lines of code:_
+1) _Start by creating an appsettings.json file in the main/root directory. This file should BE KEPT PRIVATE and should be populated with the following lines of code:_
 
 ```
 {
@@ -82,7 +82,7 @@ _A user can also, edit or delete clients and stylists as necessary, updating the
 
 1) _In your terminal, navigate to the HairSalon folder by starting at the root directory and typing the following into your terminal:_ ```cd HairSalon```
 
-2) _In the HairSalon directory run "dotnet restore" to download the needed dependencies._
+2) _In the HairSalon directory run ```dotnet restore``` to download the needed dependencies._
 
 3) _Once here, you will need to run the following in your terminal:_ ```dotnet build```
 

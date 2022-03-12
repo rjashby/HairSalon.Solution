@@ -38,11 +38,11 @@ _A user can also, edit or delete clients and stylists as necessary, updating the
 
 2) _Additionally, you will need to download the .NET framework, which can be downloaded at [.NET5](https://dotnet.microsoft.com/en-us/download/dotnet/5.0)_.
 
-3) _To effectively work with the database, download MySQL Workbench at [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)_
+3) _To effectively work with the database, download MySQL Workbench at [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)._
 
 **Cloning**
 
-1) _In order to utilize this page on your local machine, you will need to clone a copy of this repository_
+1) _In order to utilize this page on your local machine, you will need to clone a copy of this repository._
 
 2) _Navigate to your desired directory in your command terminal and run:_ ``` $ git clone https://github.com/rjashby/HairSalon.Solution```
 
@@ -69,7 +69,7 @@ _A user can also, edit or delete clients and stylists as necessary, updating the
   }
 }
 ```
-2) _Ensure that your .gitignore file includes the following files before pushing to GitHub_
+2) _Ensure that your .gitignore file includes the following files before pushing to GitHub:_
 
 ``` 
 */obj/

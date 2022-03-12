@@ -60,12 +60,8 @@ _A user can also, edit or delete clients and stylists as necessary, updating the
 
 **Using The Database** 
 
-1) 
+1) _In order to access the database you will need to create an appsettings.json file in the main/root directory. This file should be populated with the following lines of code:_
 
-_**In order to access a usable version of the sql database you will need to do the following:**_
-
-* _Create a file named appsettings.json in the ToDoList directory_
-* _The file should contain this block of code except with your own username and password for the server(brackets around private information not included):_
 ```
 {
   "ConnectionStrings": {
@@ -73,27 +69,26 @@ _**In order to access a usable version of the sql database you will need to do t
   }
 }
 ```
-* _Open MySQL and log into your server_
-* _In the "Navigator" panel select the "Administration" tab._
-* _Select "Data Import/Restore"_
-* _Select "Import from self-contained file" navigate to to the BestRestaurants directory you cloned above and select best\_restaurants.sql_
-* _In "Default Schema to be Imported to" select new and name the schema best\_restaurants_
-* _NOTE: Make sure you name the file best\_restaurants or else the project won't locate the correct database_
-* _Click Start Import_
-* _The schema has now been added! You may need to refresh your databases to see the newly imported database_
+2) _Ensure that your .gitignore file includes the following files before pushing to GitHub_
 
-* _Now in your terminal run "dotnet restore" to download csproj dependencies._
- * _Once all of the above is completed you can view the project on your local server by running "dotnet run"_
+``` 
+*/obj/
+*/bin/
+.vscode
+*/appsettings.json
+```
 
 **Running the Program**
 
 1) _In your terminal, navigate to the HairSalon folder by starting at the root directory and typing the following into your terminal:_ ```cd HairSalon```
 
-2) _Once here, you will need to run the following in your terminal:_ ```dotnet build```
+2) _In the HairSalon directory run "dotnet restore" to download the needed dependencies._
 
-3) _Once the project builds (and no errors appear), you can run the program by entering the following in your terminal:_ ```dotnet run```
+3) _Once here, you will need to run the following in your terminal:_ ```dotnet build```
 
-4) _If you wish to changes made in real time, you may run:_ ```dotnet watch run```
+4) _Once the project builds (and no errors appear), you can run the program by entering the following in your terminal:_ ```dotnet run```
+
+5) _If you wish to changes made in real time, you may run:_ ```dotnet watch run```
 
 ## Known Bugs 
 

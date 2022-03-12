@@ -23,6 +23,7 @@
     <li>@Html.ActionLink($"{client.Name}", "Details", "Clients", new { id = client.ClientId })</li>
 }
 <br>
+<p>@Html.ActionLink("Add a client", "Create", "Clients")</p>
 <p>@Html.ActionLink("Edit Stylist Information", "Edit", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Back to Stylists", "Index")</p>
 <p>@Html.ActionLink("See Client List", "Index", "Clients")</p>

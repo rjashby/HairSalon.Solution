@@ -21,7 +21,6 @@
 * _MySQL Workbench_
 * _Windows PowerShell_
 
-
 ## Description 
 
 _This simple C# application gathers input from a user from form input fields. The user can add "stylist" objects to a list of stylists, which are stored in a database. The stylists will have a list to populate with "clients" as new clients are obtained_
@@ -40,6 +39,7 @@ _A user can also, edit or delete clients and stylists as necessary, updating the
 
 3) _To effectively work with the database, download MySQL Workbench at [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)._
 
+
 **Cloning**
 
 1) _In order to utilize this page on your local machine, you will need to clone a copy of this repository._
@@ -56,6 +56,19 @@ _A user can also, edit or delete clients and stylists as necessary, updating the
 2) _Once downloaded, unzip and extract the files._
 
 3) _Follow the steps above to view, edit, and open the files as needed._
+
+
+**Importing The Database**
+
+1) _Open mySQl Workbench. In the Navigator, click on the "Administration" window, then select Data Import/Restore._
+
+2) _In Import Options, select Import from Self-Contained File, and select the file named:_ ```ryan_ashby.sql```
+
+3) _Under Default Schema to be Imported To, select the New button, and enter the name of your database and click Ok._
+
+4) _Navigate to the tab called Import Progress and click "Start Import."_
+
+5) _After you are finished with the above steps, reopen the Navigator > Schemas tab. Right click and select Refresh All. Your new test database will appear._
 
 
 **Using The Database** 
